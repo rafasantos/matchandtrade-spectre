@@ -73,6 +73,31 @@
     }
   }
 
+  // Button Tertiary
+  &.btn-tertiary {
+    background: $tertiary-color;
+    border-color: $tertiary-color-dark;
+    color: $light-color;
+    &:focus,
+    &:hover {
+      background: darken($tertiary-color-dark, 2%);
+      border-color: darken($tertiary-color-dark, 5%);
+      color: $light-color;
+    }
+    &:active,
+    &.active {
+      background: darken($tertiary-color-dark, 4%);
+      border-color: darken($tertiary-color-dark, 7%);
+      color: $light-color;
+    }
+    &.loading {
+      &::after {
+        border-bottom-color: $light-color;
+        border-left-color: $light-color;
+      }
+    }
+  }
+
   // Button Colors
   &.btn-success {
     @include button-variant($success-color);

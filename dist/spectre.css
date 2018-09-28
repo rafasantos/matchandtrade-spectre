@@ -634,6 +634,31 @@ html:lang(ko),
   border-left-color: #fff;
 }
 
+.btn.btn-tertiary {
+  background: #d95a27;
+  border-color: #cd5424;
+  color: #fff;
+}
+
+.btn.btn-tertiary:focus,
+.btn.btn-tertiary:hover {
+  background: #c45122;
+  border-color: #b74b20;
+  color: #fff;
+}
+
+.btn.btn-tertiary:active,
+.btn.btn-tertiary.active {
+  background: #bb4d21;
+  border-color: #ae481f;
+  color: #fff;
+}
+
+.btn.btn-tertiary.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
 .btn.btn-success {
   background: #32b643;
   border-color: #2faa3f;
@@ -3117,6 +3142,19 @@ a.text-secondary:visited {
   color: #fafafe;
 }
 
+.text-tertiary {
+  color: #cd5424;
+}
+
+a.text-tertiary:focus,
+a.text-tertiary:hover {
+  color: #b74b20;
+}
+
+a.text-tertiary:visited {
+  color: #db6130;
+}
+
 .text-gray {
   color: #bcc3ce !important;
 }
@@ -3202,6 +3240,11 @@ a.text-error:visited {
 
 .bg-secondary {
   background: #f1f1fc !important;
+}
+
+.bg-tertiary {
+  background: #d95a27;
+  color: #fff;
 }
 
 .bg-dark {
